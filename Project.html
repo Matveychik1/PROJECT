@@ -76,9 +76,95 @@
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.441);
         }
  
+       
         .move-right {
             margin-left: auto;
         }
+
+        main .container {
+            display: flex;
+            border-bottom: 1px solid gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main .container .left-block {
+            padding: 60px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+
+        main .container .right-block {
+            flex-basis: 50%;
+            /* background-color: red; */
+        }
+
+        main .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main .container .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(182, 182, 182);
+            text-align: center;
+            padding: 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        main .container2 {
+            display: flex;
+            border-bottom: 1px solid gray;
+            font-family: 'Times New Roman', Times, serif;
+         
+        }
+ 
+        main .container2 .left-block2 {
+            padding: 60px;
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+ 
+        main .container2 .right-block2 {
+            flex-basis: 38%;
+           
+        }
+ 
+        main .container2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ 
+        main .container2 .btn2 {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(182, 182, 182);
+            text-align: center;
+            padding: 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .galala {
+ 
+ text-align: center;
+}
+
+.gallery {
+ display: flex;
+ height: 200px;
+ margin: 60px;
+
+}
+
+.gallery img {
+ object-fit: cover;
+     flex-grow: 1;
+
+}
+
+
         
     
     </style>
@@ -148,8 +234,83 @@
     
         <main>
             <!-- main content -->
-            Content
+            <div class="container">
+                <div class="left-block">
+                    <h2>Let's hit the road</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn">
+                        START
+                    </div>
+                </div>
+                <div class="right-block">
+                    <img src="./image/images.jpg" alt="">
+                </div>
+            </div>
+     
+     
+     
+            <div class="container2">
+                <div class="right-block2">
+                    <img src="./image/koster1.jpg" alt="">
+                </div>
+                <div class="left-block2">
+                    <h2>Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn2">
+                        More
+                    </div>
+                </div>
+            </div>
+     
+     
+            <div class="container">
+                <div class="left-block">
+                    <h2>Story</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore velit libero harum necessitatibus,
+                        at
+                        hic dolorum assumenda eligendi dolor quibusdam reprehenderit tempora.</p>
+                    <p>
+                        <small>Odio quis excepturi ducimus
+                            blanditiis dolores in!</small>
+                    </p>
+                    <div class="btn">
+                        More
+                    </div>
+                </div>
+                <div class="right-block">
+                    <img src="./image/koster2.jpg" alt="">
+                </div>
+            </div>
+            <!-- next block -->
+            
+            <h2 class="galala">Gallery</h2>
+    <section class="gallery">
+ 
+        <img src="./image/1713421064651.png" alt="">
+ 
+        <img src="./image/on-the-shore-borrowdale-and-derwent-water-1518851.webp" alt="">
+ 
+        <img src= "./image/Zugpsitze_mountain.jpg" alt="">
+ 
+        <img src="./image/istockphoto-517188688-1024x1024.jpg" alt="">
+     
+ 
+ 
+    </section>
         </main>
+        
         <footer>
             <div>
                 <a href="">
