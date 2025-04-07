@@ -183,6 +183,66 @@
 
             text-align: center;
         }
+
+        h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form .column-3 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        form .column-3>* {
+            flex-grow: 1;
+        }
+
+        form .column-3 input {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        form select {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        form .column-3 textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        
+
+.send-button {
+  
+  color: rgb(0, 0, 0);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+.button-wrapper {
+  text-align: right;
+}
+
+        
     </style>
 </head>
 
@@ -323,46 +383,90 @@
             <img src="./image/istockphoto-517188688-1024x1024.jpg" alt="">
 
         </section>
-            <h2 class="Marat">Fearles</h2>
+        <h2 class="Marat">Fearles</h2>
 
-            <div class="grid">
+        <div class="grid">
 
-                <div>
-                    <img src="./image/airplane-48.png" alt="">
-                    <h4>One</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, quo! dnjhjujdk kkdj</p>
-                </div>
-                <div>
-                    <img src="./image/map_marker-48.png" alt="">
-                    <h4>One</h4>
-                    <p>Pariatur reiciendis ducimus ipsa est nam aut repudiandae velit similique.</p>
-                </div>
-                <div>
-                    <img src="./image/movie-48.png alt="">
+            <div>
+                <img src="./image/airplane-48.png" alt="">
+                <h4>One</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, quo! dnjhjujdk kkdj</p>
+            </div>
+            <div>
+                <img src="./image/map_marker-48.png" alt="">
+                <h4>One</h4>
+                <p>Pariatur reiciendis ducimus ipsa est nam aut repudiandae velit similique.</p>
+            </div>
+            <div>
+                <img src="./image/movie-48.png alt="">
                     <h4>One</h4>
                     <p>Voluptate fugit dicta hic, assumenda mollitia repudiandae nesciunt aperiam provident. faf
                         fkkiowuj idikl jjfikkf</p>
                 </div>
                 <div>
-                    <img src="./image/alarm_clock-48.png" alt="">
-                    <h4>One</h4>
-                    <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! oesoifh ijpoh</p>
-                </div>
-                <div>
-                    <img src="./image/face-48.png" alt="">
-                    <h4>One</h4>
-                    <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! fsef e kkiujj </p>
-                </div>
-                <div>
-                    <img src="./image/genius-48.png" alt="">
-                    <h4>One</h4>
-                    <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! adaddad ajffo ppmofm
-                        opjf;lkmo kj;ljo</p>
-                </div>
+                    <img src=" ./image/alarm_clock-48.png" alt="">
+                <h4>One</h4>
+                <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! oesoifh ijpoh</p>
             </div>
+            <div>
+                <img src="./image/face-48.png" alt="">
+                <h4>One</h4>
+                <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! fsef e kkiujj </p>
+            </div>
+            <div>
+                <img src="./image/genius-48.png" alt="">
+                <h4>One</h4>
+                <p>Quae, repellendus assumenda error facere ducimus expedita quis maiores illo! adaddad ajffo ppmofm
+                    opjf;lkmo kj;ljo</p>
+            </div>
+        </div>
 
-        
+
     </main>
+
+    <form>
+        <div class="column-3">
+            <label for="name">Name:<br>
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="email">Email:<br>
+                <input type="email" id="email" name="email">
+            </label>
+            <label for="message">Phone:<br>
+                <input type="tel" id="tel" name="tel">
+            </label>
+        </div>
+        <div>
+            <label>Contact me via: </label>
+            <input type="radio" name="contact">
+            <label for="">Email</label>
+            <input type="radio" name="contact">
+            <label for="">Phone</label>
+            <input type="radio" name="contact">
+            <label for="">Telegram</label>
+        </div>
+        <div>
+            <label>Topic:<br>
+                <select>
+                    <option value="1">Post my story</option>
+                    <option value="2">Suggest an idea</option>
+                    <option value="3">Say something</option>
+                </select>
+            </label>
+            <div class="column-3">
+                <label for="message">Message:<br>
+                    <textarea rows="10"></textarea>
+                </label>
+            </div>
+            <input type="radio" name="contact">
+            <label for="">I am a human</label>
+
+            <div class="button-wrapper">
+                <button type="submit" class="send-button">SEND</button>
+              </div>
+        </div>
+        </div>
+    </form>
 
     <footer>
         <div>
