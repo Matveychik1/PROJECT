@@ -243,6 +243,37 @@
   text-align: right;
 }
 
+@media (max-width: 850px) {
+            .move-right {
+                display: none;
+            }
+ 
+            main .container .right-block2,
+            main .container .left-block2 {
+                flex-basis: 50%;
+               
+            }
+ 
+            .gallery img {
+                display: none;
+                flex-basis: 50%;
+            }
+ 
+            .gallery img:nth-last-child(1),
+            .gallery img:nth-last-child(2) {
+                display: block;
+                flex-shrink: 0;
+            }
+            .grid{
+                grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            }
+            main .container2 .right-block2 {
+            flex-basis: 50%;
+           
+        }
+        }
+
         
     </style>
 </head>
